@@ -13,20 +13,6 @@ import java.util.Comparator;
  */
 public class TitleAndMagnitudeComparator implements Comparator<QuakeEntry> {
         public int compare(QuakeEntry qe1, QuakeEntry qe2) {
-             /*
-            if (qe1.getInfo().charAt(0) < qe2.getInfo().charAt(0)){
-	        return -1;
-	       }
-	    if (qe1.getInfo().charAt(0) > qe2.getInfo().charAt(0)){
-	        return 1;
-	       }
-             if (qe1.getInfo().charAt(0) == qe2.getInfo().charAt(0)) {
-                 if (qe1.getDepth() < qe2.getDepth()) return -1;
-                 if (qe1.getDepth() > qe2.getDepth()) return 1;
-                 return 0;
-             }
-	    return 0; */
-            //return Double.compare(qe1.getMagnitude(), qe2.getMagnitude());
 
              String[] str1 = qe1.getInfo().split(" ");
              String[] str2 = qe2.getInfo().split(" ");
