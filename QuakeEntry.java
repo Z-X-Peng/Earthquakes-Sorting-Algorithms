@@ -31,8 +31,11 @@ public class QuakeEntry implements Comparable<QuakeEntry>{
 
 	@Override
 	public int compareTo(QuakeEntry loc) {
-         return 0;
-            /*            
+             // the method one reorder the data using DifferentSorters.java and TitleAndMagnitudeComparator.java
+	        return 0;
+            
+	/*  
+	     // the method two reorder the data inside QuakeEntry.java
              String[] str1 = title.split(" ");
              String[] str2 = loc.getInfo().split(" ");
              String one = "";
@@ -73,8 +76,8 @@ public class QuakeEntry implements Comparable<QuakeEntry>{
              return 0;
              */
              
-               
-             //return Double.compare(magnitude, loc.getMagnitude());
+            // the first way to sort by Magnitude   
+            //return Double.compare(magnitude, loc.getMagnitude());
 	    // Here is another way to sort by Magnitude
 	    /*
 	    if (magnitude < loc.getMagnitude()){
@@ -89,9 +92,10 @@ public class QuakeEntry implements Comparable<QuakeEntry>{
                  return 0;
              }
 	    return 0;
-	    
+	    // the third way to sort by Magnitude using DifferentSorters.java and MagnitudeComparator.java
 	    */
 	    
+		
 	   //  Below here sorts by Location
 	    /*
 		double difflat = myLocation.getLatitude() - loc.myLocation.getLatitude();
@@ -103,8 +107,7 @@ public class QuakeEntry implements Comparable<QuakeEntry>{
 		}
 		if (difflat < 0) return -1;
 		if (difflat > 0) return 1;
-		
-		
+				
 		// never reached
 		return 0;
 		*/
